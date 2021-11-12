@@ -170,5 +170,24 @@
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: var(--spacing-gutter-large);
         }
+
+        .recipe {
+            background: var(--color-white);
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
+            transform: scale(1);
+            transition: all 300ms ease-in-out;
+        }
+
+        .recipe img {
+            max-width: 100%;
+        }
+
+        .recipe-list-item {
+            max-width: 64rem;
+        }
+
+        .recipe-list-item:hover {
+            transform: scale(1.02);
+        }
     </style>
 </head>
