@@ -81,6 +81,7 @@
             font-size: 1.6rem;
             font-family: var(--font-primary);
             background: var(--color-gray-1);
+            color: var(--color-dark-text);
         }
 
         h1,
@@ -188,6 +189,36 @@
 
         .recipe-list-item:hover {
             transform: scale(1.02);
+            box-shadow: -8px 8px 18px rgba(0, 0, 0, .25);
+        }
+
+        .recipe-title-container {
+            padding: var(--spacing-gutter-medium);
+            padding-bottom: 2rem;
+        }
+
+        .recipe-author {
+            padding: 0 var(--spacing-gutter-medium);
+        }
+
+        .recipe-content {
+            padding: var(--spacing-gutter-medium);
+            padding-top: 2rem;
+        }
+
+        .recipe-author-item {
+            color: var(--color-gray-4);
+            margin-right: 1rem;
+        }
+
+        .recipe-author a {
+            color: var(--color-primary);
+            transition: all 300ms ease-in-out;
+            text-decoration: none;
+        }
+
+        .recipe-author a:hover {
+            color: var(--color-primary-dark);
         }
     </style>
 </head>
