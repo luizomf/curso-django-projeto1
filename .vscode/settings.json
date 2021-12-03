@@ -1,5 +1,5 @@
 {
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 2,
   "editor.fontSize": 24,
   "python.languageServer": "Pylance", // ms-python.vscode-pylance
   "python.testing.unittestEnabled": false, // ms-python.python
