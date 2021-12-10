@@ -22,7 +22,9 @@ def register_create(request):
     form = RegisterForm(POST)
 
     if form.is_valid():
-        form.save()
+        user = form.save(commit=False)
+        user.set_password(user.password)
+        user.save()
         messages.success(request, 'Your user is created, please log in.')
 
         del(request.session['register_form_data'])
