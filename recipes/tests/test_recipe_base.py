@@ -61,7 +61,11 @@ class RecipeMixin:
     def make_recipe_in_batch(self, qtd=10):
         recipes = []
         for i in range(qtd):
-            kwargs = {'slug': f'r{i}', 'author_data': {'username': f'u{i}'}}
+            kwargs = {
+                'title': f'Recipe Title {i}',
+                'slug': f'r{i}',
+                'author_data': {'username': f'u{i}'}
+            }
             recipe = self.make_recipe(**kwargs)
             recipes.append(recipe)
         return recipes
