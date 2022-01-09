@@ -4,7 +4,7 @@
 
     <div class="form-content form-content-grid">
       {% for field in form %}
-        <div class="form-group">
+        <div class="form-group {{ field.field.widget.attrs.class }}">
           <label for="{{ field.id_for_label }}">{{ field.label }}</label>
           {{field}}
 
