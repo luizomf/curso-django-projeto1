@@ -1,5 +1,4 @@
 import os
-from typing import List
 
 from django.db.models import Q
 from django.http.response import Http404
@@ -36,6 +35,10 @@ class RecipeListViewBase(ListView):
             {'recipes': page_obj, 'pagination_range': pagination_range}
         )
         return ctx
+
+
+class RecipeListViewHome(RecipeListViewBase):
+    template_name = 'recipes/pages/home.html'
 
 
 def home(request):
