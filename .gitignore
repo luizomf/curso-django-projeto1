@@ -124,9 +124,6 @@ env
 .DS_Store
 local_settings.py
 _local_settings.py
-gunicorn-error-log
-db.sqlite3
-static/
 
 # Add again for course purpose
 !db.sqlite3
