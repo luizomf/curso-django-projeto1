@@ -8,6 +8,7 @@ colorama==0.4.4
 coverage==6.2
 cryptography==36.0.0
 Django==4.0
+django-debug-toolbar==3.2.4
 docopt==0.6.2
 Faker==10.0.0
 flake8==4.0.1
