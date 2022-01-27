@@ -13,7 +13,7 @@
   
   <ul>
     {% for recipe in recipes %}
-      <li>{{ recipe.id }} {{ recipe.title }} {{ recipe.is_published }}</li>
+      <li>{{ recipe.id }} {{ recipe.title }} {{ recipe.author_full_name }}</li>
     {% empty %}
       <p>No recipes found</p>
     {% endfor %}
