@@ -32,6 +32,7 @@ pyOpenSSL==21.0.0
 pyparsing==3.0.6
 pytest==6.2.5
 pytest-django==4.5.2
+pytest-dotenv==0.5.2
 pytest-watch==4.2.0
 python-dateutil==2.8.2
 python-dotenv==0.19.2
