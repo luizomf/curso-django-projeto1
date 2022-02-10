@@ -16,7 +16,8 @@
       {% if user.is_authenticated %}
         <a href="{% url 'authors:dashboard_recipe_new' %}">New recipe</a>
         <a href="{% url 'authors:dashboard' %}">Dashboard</a>
-        <a href="{% url 'authors:logout' %}">Logout</a>
+        <a class="authors-logout-link" href="{% url 'authors:logout' %}">Logout</a>
+        {% include 'authors/partials/form_logout.html' %}
       {% else %}
         <a href="{% url 'authors:login' %}">Login</a>
         <a href="{% url 'authors:register' %}">Register</a>

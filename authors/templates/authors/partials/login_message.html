@@ -4,10 +4,7 @@
   {{ request.user.username }}. 
   <a href="{% url 'authors:dashboard' %}">See your recipes</a>, 
   <a href="{% url 'authors:dashboard_recipe_new' %}">create a new recipe</a> or  
-  <form class="inline-form" action="{% url 'authors:logout' %}" method='POST'>
-    {% csrf_token %}
-    <input type="hidden" name="username" value="{{ request.user.username }}">
-    <button class="plaintext-button" type="submit">click here</button>
-  </form> to logout.
+  {% include 'authors/partials/form_logout.html' %}
+  <a class="authors-logout-link" href="#">click here</a> to logout.
 </div>
 {% endif %}
