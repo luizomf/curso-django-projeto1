@@ -465,6 +465,10 @@ a {
   margin: var(--spacing-gutter-medium) 0;
 }
 
+.hidden-text {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .main-content-list,
   .form-content-grid {
