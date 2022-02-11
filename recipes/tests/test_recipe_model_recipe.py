@@ -13,7 +13,7 @@ class RecipeModelTest(RecipeTestBase):
         recipe = Recipe(
             category=self.make_category(name='Test Default Category'),
             author=self.make_author(username='newuser'),
-            title='Recipe Title',
+            title='Recipe Title 1',
             description='Recipe Description',
             slug='recipe-slug-for-no-defaults',
             preparation_time=10,
