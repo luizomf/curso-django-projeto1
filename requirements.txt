@@ -10,6 +10,7 @@ cryptography==36.0.0
 Django==4.0
 django-debug-toolbar==3.2.4
 djangorestframework==3.13.1
+djangorestframework-simplejwt==5.1.0
 docopt==0.6.2
 Faker==10.0.0
 flake8==4.0.1
@@ -29,6 +30,7 @@ py==1.11.0
 pycodestyle==2.8.0
 pycparser==2.21
 pyflakes==2.4.0
+PyJWT==2.3.0
 pyOpenSSL==21.0.0
 pyparsing==3.0.6
 pytest==6.2.5
