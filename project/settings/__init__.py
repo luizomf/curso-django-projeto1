@@ -4,6 +4,7 @@ from .installed_apps import *  # isort:skip
 from .middlewares import *  # isort:skip
 
 from .assets import *
+from .cors_headers import *
 from .databases import *
 from .i18n import *
 from .messages import *

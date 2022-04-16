@@ -8,6 +8,7 @@ colorama==0.4.4
 coverage==6.2
 cryptography==36.0.0
 Django==4.0
+django-cors-headers==3.11.0
 django-debug-toolbar==3.2.4
 djangorestframework==3.13.1
 djangorestframework-simplejwt==5.1.0
